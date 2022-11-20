@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+</head><body>
+<script type="module">
+import { showGraph } from "./showGraph.js";
+
+const f = (x, y) => {
+  return Math.sin(x) * Math.sin(y);
+};
+
+const orgpos = { x: 0, y: 1.5, z: -1.2 };
+const scale = 5;
+const zscale = .3;
+showGraph(f, orgpos, scale, zscale);
+</script>
+</body>
+</html>
